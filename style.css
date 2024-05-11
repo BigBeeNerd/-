@@ -1,0 +1,23 @@
+body {
+    background-color: yellow;
+    font-family: sans-serif;
+  }
+  h1 {
+    font-weight: bolder;
+    color: purple;
+  }
+  h2 {
+    font-weight: bold;
+    color: purple;
+  }
+  h3 {
+    font-weight: bold;
+    color: purple;
+  }
+  h {
+    color: purple;
+  }
+  p {
+    font-family: monospace;
+    color: purple;
+  }
