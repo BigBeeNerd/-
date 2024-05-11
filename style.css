@@ -79,7 +79,7 @@ nav {
     text-decoration: none;
     &:hover,
     &:focus {
-      color: white;
+      color: black;
     }
     &.active {
       color: $primaryColor;
