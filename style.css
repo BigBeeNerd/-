@@ -2,22 +2,87 @@ body {
     background-color: yellow;
     font-family: sans-serif;
   }
-  h1 {
-    font-weight: bolder;
-    color: purple;
+
+* { box-sizing: border-box;}
+
+$primaryColor: yellow;
+$dkBg: #303947;
+$itemBg: #6788a7;
+$itemBgOdd: darken(#6788a7,15%);
+
+html, body {
+  font-family: "Arial", sans-serif;
+  background: #fff;
+  padding: 80px 30px 30px;
+  color: #444;
+  height: 100%;
+}
+
+ol, ul {
+  margin: 0 0 50px 0;
+}
+
+h1 {
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  line-height: 1.6em;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 0;
+  &:last-child {
+    margin-bottom: 40px;
   }
-  h2 {
-    font-weight: bold;
-    color: purple;
+}
+
+code {
+  background: #f8f8f8;
+  color: #d64f9b;
+  border: 1px solid #eee;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+a {
+  font-weight: bold;
+  color: $primaryColor; 
+  text-decoration: none;
+  transition: all 200ms;
+  &:hover,
+  &:focus{
+    color: black;
   }
-  h3 {
-    font-weight: bold;
-    color: purple;
+}
+
+article {
+  min-height: 50vh;
+  margin-bottom: 50px;
+  .margin {
+    margin-bottom: 100vh;
   }
-  h {
-    color: purple;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: $dkBg;
+  position: fixed;
+  padding: 30px;
+  a {
+    display: inline-flex;
+    padding: 20px 30px;
+    color: #fff;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: white;
+    }
+    &.active {
+      color: $primaryColor;
+    }
   }
-  p {
-    font-family: monospace;
-    color: purple;
-  }
+}
