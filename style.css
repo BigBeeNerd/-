@@ -22,15 +22,18 @@ body {
   }
 
   ol, ul {
+    border: 4px yellow; 
     margin: 0 0 50px 0;
   }
 
   h1 {
+    border: 4px yellow; 
     font-weight: bold;
     color: black;
   }
 
   p {
+    border: 4px yellow; 
     line-height: 1.6em;
     margin-bottom: 10px;
     font-size: 18px;
@@ -41,6 +44,7 @@ body {
   }
 
   code {
+    border: 4px yellow; 
     background: #d4ca3d;
     color: #d64f9b;
     border: 1px solid #eee;
@@ -49,6 +53,7 @@ body {
   }
 
   a {
+    border: 4px yellow; 
     font-weight: bold;
     color: $primaryColor; 
     text-decoration: none;
@@ -60,6 +65,7 @@ body {
   }
 
   article {
+    border: 4px yellow; 
     min-height: 50vh;
     margin-bottom: 50px;
     .margin {
@@ -68,6 +74,7 @@ body {
   }
 
   nav {
+    border: 4px yellow; 
     display: flex;
     width: 100%;
     top: 0;
@@ -76,6 +83,7 @@ body {
     position: fixed;
     padding: 0px;
     a {
+      border: 4px yellow; 
       display: inline-flex;
       padding: 20px 30px;
       color: #fff;
