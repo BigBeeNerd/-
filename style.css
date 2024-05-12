@@ -7,12 +7,13 @@ body {
   $dkBg: #303947;
   $itemBg: #6788a7;
   $itemBgOdd: darken(#6788a7,15%);
-
+}
   .side-scroll-item + .side-scroll-item {
     margin-left: 60px;
   }
 
   html, body {
+    border: 4px yellow;  
     font-family: "Arial", sans-serif;
     background: #fff;
     padding: 80px 30px 30px;
