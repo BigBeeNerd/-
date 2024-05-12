@@ -71,7 +71,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    background: orange;
+    background: black;
     position: fixed;
     padding: 0px;
     a {
@@ -81,7 +81,7 @@ body {
       text-decoration: none;
       &:hover,
       &:focus {
-        color: black;
+        color: yellow;
       }
       &.active {
         color: $primaryColor;
