@@ -50,7 +50,6 @@ body {
   }
 
   a {
-    background-image: url('honeycomb-scaled.png');
     font-weight: bold;
     color: $primaryColor; 
     text-decoration: none;
