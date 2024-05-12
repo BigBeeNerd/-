@@ -71,7 +71,6 @@ body {
   }
 
   nav {
-    background-image: url('honeycomb-scaled.png');
     display: flex;
     width: 100%;
     top: 0;
@@ -80,7 +79,6 @@ body {
     position: fixed;
     padding: 0px;
     a {
-      background-image: url('honeycomb-scaled.png');
       display: inline-flex;
       padding: 20px 30px;
       color: #fff;
