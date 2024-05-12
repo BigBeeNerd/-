@@ -12,30 +12,21 @@ body {
     margin-left: 60px;
   }
 
-  html, body {
-    border: 4px yellow;  
+  html, body {  
     font-family: "Arial", sans-serif;
     background: #fff;
     padding: 80px 30px 30px;
     color: #444;
     height: 100%;
   }
-html.double {border-style: double;}
-body.double {border-style: double;}
   ol, ul {
-    border: 4px yellow; 
     margin: 0 0 50px 0;
   }
-ol.double {border-style: double;}
-ul.double {border-style: double;}
   h1 {
-    border: 4px yellow; 
     font-weight: bold;
     color: black;
   }
-h1.double {border-style: double;}
   p {
-    border: 4px yellow; 
     line-height: 1.6em;
     margin-bottom: 10px;
     font-size: 18px;
@@ -44,18 +35,14 @@ h1.double {border-style: double;}
       margin-bottom: 40px;
     }
   }
-p.double {border-style: double;}
   code {
-    border: 4px yellow; 
     background: #d4ca3d;
     color: #d64f9b;
     border: 1px solid #eee;
     padding: 2px;
     border-radius: 3px;
   }
-code.double {border-style: double;}
   a {
-    border: 4px yellow; 
     font-weight: bold;
     color: $primaryColor; 
     text-decoration: none;
@@ -65,9 +52,7 @@ code.double {border-style: double;}
       color: black;
     }
   }
-a.double {border-style: double;}
   article {
-    border: 4px yellow; 
     min-height: 50vh;
     margin-bottom: 50px;
     .margin {
@@ -75,9 +60,7 @@ a.double {border-style: double;}
     }
     
   }
-article.double {border-style: double;}
   nav {
-    border: 4px yellow; 
     display: flex;
     width: 100%;
     top: 0;
@@ -86,7 +69,6 @@ article.double {border-style: double;}
     position: fixed;
     padding: 0px;
     a {
-      border: 4px yellow; 
       display: inline-flex;
       padding: 20px 30px;
       color: #fff;
@@ -99,6 +81,4 @@ article.double {border-style: double;}
         color: $primaryColor;
       }
     }
-    nav.double {border-style: double;}
-    a.double {border-style: double;}
   }
