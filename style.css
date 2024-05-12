@@ -20,18 +20,20 @@ body {
     color: #444;
     height: 100%;
   }
-
+html.double {border-style: double;}
+body.double {border-style: double;}
   ol, ul {
     border: 4px yellow; 
     margin: 0 0 50px 0;
   }
-
+ol.double {border-style: double;}
+ul.double {border-style: double;}
   h1 {
     border: 4px yellow; 
     font-weight: bold;
     color: black;
   }
-
+h1.double {border-style: double;}
   p {
     border: 4px yellow; 
     line-height: 1.6em;
@@ -42,7 +44,7 @@ body {
       margin-bottom: 40px;
     }
   }
-
+p.double {border-style: double;}
   code {
     border: 4px yellow; 
     background: #d4ca3d;
@@ -51,7 +53,7 @@ body {
     padding: 2px;
     border-radius: 3px;
   }
-
+code.double {border-style: double;}
   a {
     border: 4px yellow; 
     font-weight: bold;
@@ -63,7 +65,7 @@ body {
       color: black;
     }
   }
-
+a.double {border-style: double;}
   article {
     border: 4px yellow; 
     min-height: 50vh;
@@ -72,7 +74,7 @@ body {
       margin-bottom: 100vh;
     }
   }
-
+article.double {border-style: double;}
   nav {
     border: 4px yellow; 
     display: flex;
@@ -96,4 +98,6 @@ body {
         color: $primaryColor;
       }
     }
+    nav.double {border-style: double;}
+    a.double {border-style: double;}
   }
