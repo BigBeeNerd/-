@@ -27,9 +27,11 @@ body {
   h1 {
     font-weight: bold;
     color: black;
+    background-image: url('honeycomb-scaled.png');
   }
 
   p {
+    background-image: url('honeycomb-scaled.png');
     line-height: 1.6em;
     margin-bottom: 10px;
     font-size: 18px;
@@ -48,6 +50,7 @@ body {
   }
 
   a {
+    background-image: url('honeycomb-scaled.png');
     font-weight: bold;
     color: $primaryColor; 
     text-decoration: none;
@@ -59,6 +62,7 @@ body {
   }
 
   article {
+    background-image: url('honeycomb-scaled.png');
     min-height: 50vh;
     margin-bottom: 50px;
     .margin {
@@ -67,6 +71,7 @@ body {
   }
 
   nav {
+    background-image: url('honeycomb-scaled.png');
     display: flex;
     width: 100%;
     top: 0;
@@ -75,6 +80,7 @@ body {
     position: fixed;
     padding: 0px;
     a {
+      background-image: url('honeycomb-scaled.png');
       display: inline-flex;
       padding: 20px 30px;
       color: #fff;
