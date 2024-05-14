@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
   <script>
-     alert("Welcome!")
+    console.log(navigator.userAgent);
+    var user = detect.parse(navigator.userAgent);
+    console.log(
+ user.browser.family
+ user.browser.version
+ user.os.name
+);
+
+    if (user.browser.family === 'Safari') {
+ alert('You\'re using the Safari browser, It is reccomended to go to Opera, Chrome or Firefox.'); 
+}
     // Get the button:
 let mybutton = document.getElementById("myBtn");
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -15,13 +23,11 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
   </script>
   <head>
     <title>Beep</title>
@@ -58,14 +64,12 @@ function topFunction() {
         (I really like Pokemon, Japan, anime and Bees)
       </p>
     </article>
-
     <article id="s2">
       <h2>‎ </h2>
       <h2>‎ </h2>
       <h2>Projects</h2>
       <p>I am working on various games such as Beep's RNG, Beep Battlegrounds, The hive and many more.I also work on my albums, art studies and animations.</p>
     </article>
-
     <article id="s3">
       <h2>‎ </h2>
       <h2>‎ </h2>
@@ -74,7 +78,6 @@ function topFunction() {
       Notepad Here
     </textarea>
     </article>
-
     <article class="margin" id="s4">
       <section class="side-scroll section">
         <div class="side-scroll-container container">
@@ -119,7 +122,6 @@ function topFunction() {
       <h1>My Playlist</h1>
     <embed src="https://music.youtube.com/playlist?list=PLBK_7yx1dpCxy6fRchbpQDTOs23kHM4l3" width="1560" height="605">
     </article>
-
     
     <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
   </body>
