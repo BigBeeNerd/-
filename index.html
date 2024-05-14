@@ -32,37 +32,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
-
-
-
-    const buttonText = document.querySelector('.button-text');
-const buttonTextCharactersContainer = document.querySelector('.button-text-characters-container');
-
-const buttonTextCharacters = buttonText.textContent.split('');
-
-const characterCountWithoutWhitespaces = buttonTextCharacters.filter(character => character => !/\s/.test(character)).length;
-
-const buttonTextCharactersFragment = document.createDocumentFragment();
-
-let characterIndex = 1;
-
-buttonTextCharacters.forEach(character => {
-  const span = document.createElement('span');
-  span.textContent = character;
-
-  if (!/\s/.test(character)) {
-    span.classList.add('button-text-character');
-    const delay = `calc(2s / ${characterCountWithoutWhitespaces} * ${characterIndex} + 1s)`;
-    span.style.setProperty('--delay', delay);
-
-    characterIndex++;
-  }
-  
-  buttonTextCharactersFragment.appendChild(span);
-});
-
-buttonTextCharactersContainer.appendChild(buttonTextCharactersFragment);
   </script>
   <head>
     <title>Beep</title>
@@ -145,16 +114,6 @@ buttonTextCharactersContainer.appendChild(buttonTextCharactersFragment);
       <h2>‎ </h2>
       <h2>Donations (Massively Appreciated)</h2>
       <h3>Robux:</h3>
-      <a href=""><button class="button" type="button">
-  <span class="button-outline">    
-    <span class="button-shadow">
-      <span class="button-inside">
-        <span class="button-text visually-hidden">Test</span>
-        <span class="button-text-characters-container" aria-hidden="true"></span>
-      </span>
-    </span>
-  </span>
-</button></a>
       <a href="https://www.roblox.com/game-pass/248400994"><button>5</button></a>
       <a href="https://www.roblox.com/game-pass/215882473"><button>10</button></a>
       <a href="https://www.roblox.com/game-pass/216713906"><button>25</button></a>
