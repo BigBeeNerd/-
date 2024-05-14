@@ -8,9 +8,6 @@ body {
   $itemBg: #6788a7;
   $itemBgOdd: darken(#6788a7,15%);
 }
-  .side-scroll-item + .side-scroll-item {
-    margin-left: 60px;
-  }
 
   html, body {
     font-family: "Arial", sans-serif;
