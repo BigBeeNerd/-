@@ -1,29 +1,19 @@
-function scrollNav() {
-  $('.nav a').click(function(){
-    $(".active").removeClass("active");     
-    $(this).addClass("active");
-    
-    $('html, body').stop().animate({
-      scrollTop: $($(this).attr('href')).offset().top - 160
-    }, 300);
-    return false;
-  });
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
-scrollNav();
 
-const listWrapperEl = document.querySelector('.side-scroll-list-wrapper');
-const listEl = document.querySelector('.side-scroll-list');
-
-gsap.to(listEl, {
-  x: () => -(listEl.clientWidth - listWrapperEl.clientWidth),
-  ease: 'none',
-  scrollTrigger: {
-    trigger: '.side-scroll',
-    start: 'top top', // 要素の上端（top）が、ビューポートの上端（top）にきた時
-    end: () => `+=${listEl.clientWidth - listWrapperEl.clientWidth}`,
-    scrub: true,
-    pin: true,
-    anticipatePin: 1,
-    invalidateOnRefresh: true,
-  },
-});
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
